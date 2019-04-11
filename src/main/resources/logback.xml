@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern> [%p] %d{yyyy-MM-dd HH:mm:ss} %m %n</pattern>
+        </layout>
+    </appender>
+    <!--根日志  输出级别-->
+    <root level="info">
+        <appender-ref ref="stdout"/>
+    </root>
+    <!--子日志    打印哪个包中的日志   以及打印的级别-->
+    <logger name="com.baizhi.dao" level="DEBUG"/>
+</configuration>
